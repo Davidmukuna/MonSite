@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="styleinscription.css" />
+    <title>Entrepreneuriat</title>
+  </head>
+  <body>
+    <a href="index.html">Retour</a>
+
+    <form>
+      <fieldset>
+        <legend>Inscription</legend>
+        <label for="matricule">
+          Matricule:
+        </label>
+        <input type="text" name="matricule" id="matricule" />
+        <br /><br />
+        <label for="nom">
+          Nom:
+        </label>
+        <input type="text" name="nom" id="nom" />
+        <br /><br />
+        <label for="postnom">
+          Postnom:
+        </label>
+        <input type="text" name="Postnom" id="postnom" />
+        <br /><br />
+        <label for="naissance">
+          Date de naissance:
+        </label>
+        <input type="date" name="date de naissance" id="naissance" />
+        <br /><br />
+        <label for="mail">
+          e-mail ou telephone:
+        </label>
+        <input type="mailto:exemple@mail.com" id="mail" />
+        <br /><br />
+        <label>
+          Sexe:
+        </label>
+        <select>
+          <option>Homme</option>
+          <option>Femme</option>
+        </select>
+        <br /><br />
+        <label>Fonction:</label>
+        <select>
+          <option>Fonctionnaire</option>
+          <option>Menagere</option>
+        </select>
+        <br />
+
+        <br />
+        <input
+          type="button"
+          value="Envoyer"
+          onclick="alert('Votre requete à été envoyé')"
+        />
+      </fieldset>
+      <br />
+    </form>
+  </body>
+</html>

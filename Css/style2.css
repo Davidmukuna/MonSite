@@ -1,0 +1,14 @@
+.structure{
+    font-family: 'Times New Roman', Times, serif;
+    font-style: italic;
+    background: white;
+    
+}
+td{
+    border:1px solid black;
+
+ }
+    table{
+    border-collapse: collapse;
+     }
+    

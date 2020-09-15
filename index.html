@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <script type="text/javascript" src="da.js"></script>
+    <title>Entrepreneuriat</title>
+    <style>
+       
+           body {
+               margin: 0px;
+               padding: 0px;
+               background: white;
+}
+            h1 {
+               font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+               font-style: italic;
+}
+
+           font {
+               font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+               font-style: italic;
+               font-size: 20px;
+               color: white;
+               float: left;
+               display: block;
+}
+
+           .p1 {
+               float: right;
+               color: black;
+}
+
+p {
+  font-size: 13px;
+  font-family:Arial, Helvetica, sans-serif;
+  font-style: italic;
+}
+
+.motentreprendre {
+  color: red;
+}
+
+.apropos {
+  background: white;
+  font-family: "Times New Roman", Times, serif;
+  font-style: italic;
+}
+
+nav ul {
+  padding: 0px;
+  margin: 0px;
+  background-color: rgb(0, 0, 0);
+  border-radius: 5px;
+}
+nav li {
+  display: inline-block;
+  margin: 4px;
+  text-align: center;
+  line-height: 40px;
+}
+nav li a {
+  display: block;
+  text-decoration: none;
+  color: white;
+}
+
+nav li:hover {
+  background-color: rgb(49, 90, 117);
+}
+li {
+  font-family: Arial, Helvetica, sans-serif;
+  font-style: normal;
+  font-size: 15px;
+}
+
+.form-group {
+  float: right;
+}
+
+.h1 {
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-style: italic;
+  font-size: large;
+
+}
+
+.contact-title h1 {
+  font-size: 32px;
+  line-height: 10px;
+}
+.contact-title h2 {
+  font-size: 16px;
+}
+
+form {
+  margin-top: 50px;
+  transition: all 4s ease-in-out;
+}
+
+.form-control {
+  width: 600px;
+  background: transparent;
+  border: none;
+  outline: none;
+  border-bottom: 1px solid black;
+  color: black;
+  font-size: 18px;
+  margin-bottom: 16px;
+}
+input {
+  height: 45px;
+}
+
+form .submit {
+  background: rgb(0, 102, 255);
+  border-color: transparent;
+  color: #fff;
+  font-size: 20px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  height: 50px;
+  margin-top: 20px;
+}
+
+form .submit:hover {
+  background-color: #f44336;
+  cursor: pointer;
+   }
+
+.slider{
+    width: 700px;
+    height: 500px;
+    overflow: hidden;
+    margin: 50px auto;
+}
+
+.slides{
+   width: calc(500px * 3);
+   animation: glisse 7s infinite;
+
+}
+.slide{
+    float:left;
+    width: 500px;
+}
+.slide img{
+    width: 100%;
+}
+@keyframes glisse{
+    0%{
+     transform: translateX(0);
+    }
+    33%{
+     transform: translateX(-500px);
+    }
+    66%{
+     transform: translateX(-1000px);
+    }
+    100%{
+     transform: translateX(0);
+    }
+
+
+}
+.btn btn-primary {
+        -webkit-appearance: button;
+        -webkit-writing-mode: horizontal-tb !important;
+        text-rendering: auto;
+        color: buttontext;
+        letter-spacing: normal;
+        word-spacing: normal;
+        text-transform: none;
+        text-indent: 0px;
+        text-shadow: none;
+        display: inline-block;
+        text-align: center;
+        align-items: flex-start;
+        cursor: default;
+        background-color: buttonface;
+        box-sizing: border-box;
+        margin: 0em;
+        font: 400 13.3333px Arial;
+        padding: 1px 6px;
+        border-width: 2px;
+        border-style: outset;
+        border-color: buttonface;
+        border-image: initial;
+      }
+      .btn-primary {
+        color: #fff;
+        background-color: #007bff;
+        border-color: #007bff;
+      }
+
+      .btn {
+        display: inline-block;
+        font-weight: 400;
+        text-align: center;
+        vertical-align: middle;
+        cursor: pointer;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+        padding: 0.375rem 0.75rem;
+        font-size: 1rem;
+        line-height: 1.5;
+        border-radius: 0.25rem;
+        transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
+          border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+      }
+      h {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+.container {
+  width: 1200px;
+  height: 400px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.container .box {
+  position: relative;
+  width: 350px;
+  height: 400px;
+  background: #fff;
+  transition: 0.5s;
+  overflow: hidden;
+}
+.container .box img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.container .box:before {
+  content: "";
+  position: absolute;
+  top: -100%;
+  left: 0;
+  width: 50%;
+  height: 100%;
+  background: #fff;
+  z-index: 1;
+  transition: 0.5s;
+}
+.container .box:after {
+  content: "";
+  position: absolute;
+  bottom: -100%;
+  right: 0;
+  width: 50%;
+  height: 100%;
+  background: #fff;
+  z-index: 1;
+  transition: 0.5s;
+}
+.container:hover .box:before {
+  top: 0;
+}
+.container:hover .box:after {
+  bottom: 0;
+  transition-delay: 0.5s;
+}
+
+.container .box:hover:before {
+  top: -100;
+}
+.container .box:hover:after {
+  bottom: -100;
+}
+
+.b{
+  font-family:Arial, Helvetica, sans-serif;
+  font-style: italic;
+  font-size: 20px;
+  text-align:center;
+}
+.david {
+  font-family: Arial, Helvetica, sans-serif;
+  font-style: normal;
+}
+
+    </style> 
+
+    <script >
+      alert("Bienvenue dans notre page");
+    </script>
+</head>
+
+      <body>
+          
+          <center>
+          <nav>
+                <div class="container-fluid">
+              <ul>
+                  <b><font><a>JeunesEntrepreneurD'afriqueCentral</a></font></b>
+                      <p>
+                          <li><a href="Liens/inscription.html">Inscription</a></li>
+                          <li><a href="Liens/structure.html">Structure</a></li>
+                          <li><a href="Liens/apropos.html">Apropos</a></li>
+                        </center> </p>         
+              </ul>
+            </nav>
+
+            <p class="p1">
+              <b>
+                <label for="langue">Choisissez votre langue:</label>
+                <select id="langue">
+                    <option>Français</option>
+                    <option>Anglais</option>
+                    <option>Almand</option>
+                    <option>Espagnol</option>
+                </select>
+              </b>
+            </p>
+        <br>
+      
+        <h1 style="color: red; text-align: center;">Bienvenue dans notre page!</h1>
+      
+            <b class="david">
+                
+                   <h4><u>I.Definition:</h4></u>
+                    
+                   <p style="font-family: cursive; font-style: italic;">L'entrepreneuriat designe l'action d'entreprendre, de mener a bien un projet.<br>
+                    Souvent utilisé dans le secteur des affaires, le terme entreprendre signifie: <br>
+                    creer une activité (economique) pour atteindre un objectif, repondre à un <br> 
+                    besoin. Le créateur représente l'entrepreneur, soit le porteur du projet. </p>   
+                    
+                
+              
+                  
+                <h4><u>II.But de notre page:</h4></u>
+                    
+                <p style="font-family: cursive; font-style: italic;">Nous avons conçu cette <em>page</em> uniquement pour toutes ces personnes plus particulièrement<br>
+                    les<em> Jeunes</em> <span class="motentreprendre"> entrepreneurs</span> qui partagent ce desire profond de <mark>creer</mark>, <mark>inventer</mark>, <mark>concevoir</mark> et <mark>innover</mark> des projet pour l'avenir.
+                  
+                </p>
+                
+<hr>
+<div class="slider">
+    <div class="slides">
+         <div class="slide"> <img src="Images/ENT1.JPG" width="50px%" height="400px" alt="" /></div>
+          <div class="slide"><img src="Images/ENT2.JPG" width="50px%" height="400px" alt=""/></div>
+          <div class="slide"><img src="Images/RDC.JPG" width="50px" height="400px" alt=""/></div>
+          </div>
+          </div>
+<hr>
+<br>
+<div class="b">
+
+<h2>Les Images Illustratives De Nos Activités</h2>
+</div>
+<h>
+        <div class="container">
+          <div class="box">
+            <img src="Index3images/img1.jpg" width="400px" height="500px" />
+          </div>
+
+          <div class="box">
+            <img src="Index3images/img2.jpg" width="400px" height="500px" />
+          </div>
+
+          <div class="box">
+            <img src="Index3images/img3.jpg" width="400px" height="500px" />
+          </div>
+        </div>
+      </h>
+      <hr>
+<center>
+  <b>
+     <p class="h1">
+     
+                Bonjour, nous sommes toujours pret à vous servir!
+                </br>
+                               Veuillez laisser un message en cas de probleme technique ou encore pour plus de renseignement!</<mark>
+                              
+                              </p>
+                            </b>   
+                              </center>
+<center>
+
+<p class="contact-form">
+        <form id="contact-form" method="post" action="" >
+
+        <input name="name" type="text" class="form-control" placeholder="Votre nom" required></br>
+
+           <input name="email" type="email" class="form-control" placeholder="Votre email" required></br>
+
+           <textarea name="message" class="form-control" placeholder="Message" rows="4" required></textarea></br>
+
+           <input type="submit" class="form-control submit" value="Laissez un message">
+          </center>
+           
+
+        <hr>
+        <center>
+           <p>
+        <a href="Liens/info.html" class="btn btn-primary" type="submit">
+          Pour plus d'information veuillez cliquez ici
+        </a>
+      </center>
+        
+    <hr>
+        <b>
+            <marquee>
+            <p>
+            Merci d'avoir consulté notre page!</marquee></p>
+        </b>
+<br>
+              
+
+
+
+
+</body>
+
+</html>
